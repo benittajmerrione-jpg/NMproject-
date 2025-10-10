@@ -1,0 +1,43 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Product Catalog</h1>
+    </header>
+
+    <div class="container">
+        <div class="controls-panel">
+            <div class="filter-group">
+                <label for="category-select">Filter by Category:</label>
+                <select id="category-select">
+                    <option value="">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Books">Books</option>
+                    <option value="Home">Home</option>
+                </select>
+            </div>
+            <div class="sort-group">
+                <label for="sort-select">Sort by Price:</label>
+                <select id="sort-select">
+                    <option value="">None</option>
+                    <option value="price_asc">Price Ascending</option>
+                    <option value="price_desc">Price Descending</option>
+                </select>
+            </div>
+            <div class="search-group">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div id="product-list" class="product-grid">
+            </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
